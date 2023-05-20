@@ -46,26 +46,33 @@ h4, h5{
 .page-links .card{
     max-width: 20rem;
     color:white;
-    border:none;
-    /* border-color:  rgb(248, 115, 7); */
     padding:10px;
     
 }
 
-/* .real-link .card{
+.page-links .real-link.card{
+    
+    border-color:  rgb(248, 115, 7);
     box-shadow: 2px 2px 15px rgb(248, 115, 7), -2px -2px 15px rgb(87, 2, 87) ;
-} */
+}
 
-/* 
-.page-links .real-link .card:hover{
-    max-width: 18rem;
+.page-links .real-link.card:hover{
+    /* max-width: 18rem; */
     color:white;
     border-color:  rgb(248, 115, 7); 
-    padding:10px;
+    /* padding:10px; */
     transform: scale(1.05);
     z-index: 9;
     box-shadow: 0px 0px 10px rgb(248, 115, 7);
     -webkit-transition: transform 1s ease;
     -moz-transition:transform 1s ease;
     -ms-transition:transform 1s ease;
-} */
+}
+
+.merch-link{
+    text-decoration: none;
+    color:white;
+    /* position:absolute;
+    bottom: 20px; */
+    text-shadow: white;
+}

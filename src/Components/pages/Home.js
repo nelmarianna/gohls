@@ -10,6 +10,7 @@ import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Card from 'react-bootstrap/Card';
 
 function Home() {
   return (
@@ -74,27 +75,27 @@ function Home() {
             </Col>
         </Row>
 
-        <Row className='page-links justify-content-center row row-cols-1 row-cols-md-3 g-4'>
+        <Row className='page-links justify-content-center row row-cols-1 row-cols-md-3 g-4 mt-4'>
                 <Col>
-                    <div className='card bg-transparent sm-3 text-center h-100'>
-                        <img src={howToJoin} className='card-img-top' alt=""/>
-                        <div className='card-body'></div>
-                        <div className='card-footer'></div>
-                    </div>
+                    <Card className='bg-transparent sm-3 text-center h-75'>
+                        <Card.Img src={howToJoin} className='card-img-top' alt=""/>
+                        <Card.ImgOverlay></Card.ImgOverlay>
+                    </Card>
                 </Col>
                 <Col>
-                    <div className='card bg-transparent sm-3 text-center h-100'>
-                        <img src={cardImg} className='card-img-top' alt=""/>
-                        <div className='card-body'></div>
-                        <div className='card-footer'></div>
-                    </div>
+                    <Card className='real-link bg-transparent sm-3 h-75'>
+                        <Card.Img src={cardImg} className='card-img-top' alt=""/>
+                        <Card.ImgOverlay>
+                            <Card.Body><a href="https://gohls.myspreadshop.com/" target="_blank" class="merch-link stretched-link" rel="noreferrer">MERCH STORE</a></Card.Body>
+                    </Card.ImgOverlay>
+                    </Card>
                 </Col>
                 <Col>
-                    <div className='card bg-transparent sm-3 text-center h-100'>
+                    <Card className='bg-transparent sm-3 text-center h-75'>
                         <img src={faq} className='card-img-top' alt=""/>
                         <div className='card-body'></div>
                         <div className='card-footer'></div>
-                    </div>
+                    </Card>
                 </Col>
         </Row>
        
